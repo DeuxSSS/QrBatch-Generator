@@ -8,8 +8,6 @@ Program untuk membuat QR Code dari data NISN siswa secara batch dengan opsi mena
 - Generate QR Code dari data Excel/CSV
 - Sisipkan logo di tengah QR Code
 - Nama file otomatis (Format: NamaSiswa_NISN.png)
-- Antarmuka pemilihan file berbasis GUI
-- Mendukung logo dengan transparansi
 
 ## Persyaratan
 - Python 3.6+
