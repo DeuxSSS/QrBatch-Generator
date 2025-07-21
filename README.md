@@ -2,7 +2,7 @@
 
 Program untuk membuat QR Code dari data NISN siswa secara batch dengan opsi menambahkan logo.
 
-![Program Demo](https://via.placeholder.com/800x400?text=QR+Code+Generator+Screenshot) *(Ganti dengan screenshot aktual)*
+![Program Demo]([https://via.placeholder.com/800x400?text=QR+Code+Generator+Screenshot](https://github.com/DeuxSSS/QrBatch-Generator/blob/main/image.png?raw=true)) *(Ganti dengan screenshot aktual)*
 
 ## Fitur Utama
 - Generate QR Code dari data Excel/CSV
