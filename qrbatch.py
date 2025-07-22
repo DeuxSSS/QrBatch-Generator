@@ -4,6 +4,7 @@ import pandas as pd
 import os
 import sys
 from tkinter import Tk, filedialog  
+from colorama import Fore, init
 
 def buat_folder_output(folder_path):
     """Membuat folder output jika belum ada"""
@@ -113,8 +114,9 @@ def pilih_folder(judul):
     return folder_path if folder_path else None
 
 def main():
-    print("""
-========================================================================      
+    init()  
+    print(Fore.GREEN + """
+========================================================================
   ___  ____       ____ _____ _   _ _____ ____      _  _____ ___  ____  
  / _ \|  _ \     / ___| ____| \ | | ____|  _ \    / \|_   _/ _ \|  _ \ 
 | | | | |_) |   | |  _|  _| |  \| |  _| | |_) |  / _ \ | || | | | |_) |
@@ -122,11 +124,11 @@ def main():
  \__\_\_| \_\    \____|_____|_| \_|_____|_| \_\/_/   \_\_| \___/|_| \_\  
 ========================================================================  
 CSV/XLSX ONLY                                           Made by: DeuxSSS""")
-    print("\n=== PROGRAM PEMBUAT QR CODE NISN DENGAN LOGO ===")
+    print(Fore.RED + "\n=== PROGRAM PEMBUAT QR CODE NISN DENGAN LOGO ===")
     print("Versi 2.1 - Format Nama File NISN_Nama\n")
     
     # Pilih file data siswa via GUI
-    print("Silakan pilih file data siswa (Excel/CSV)...")
+    print(Fore.RESET + "Silakan pilih file data siswa (Excel/CSV)...")
     file_data = pilih_file("Pilih File Data Siswa (Excel/CSV)", 'excel')
     if not file_data:
         print("\nERROR: File data tidak dipilih!")
